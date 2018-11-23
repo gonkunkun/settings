@@ -39,7 +39,7 @@ endif
 
 
 " 引数なしでvimを開くとNERDTreeを起動
-autocmd VimEnter * execute 'NERDTree'
+" autocmd VimEnter * execute 'NERDTree'
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 
@@ -132,3 +132,6 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+set wildmenu " コマンドモードの補完
+set history=5000 " 保存するコマンド履歴の数

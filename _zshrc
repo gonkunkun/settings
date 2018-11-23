@@ -1,6 +1,9 @@
 export PATH="/anaconda3/bin:$PATH"
 
 alias ll='ls -l'
+alias tree="tree -I 'node_modules|.git' -L 5"
+
+setopt no_flow_control
 
 # ここはプロンプトの設定なので今回の設定とは関係ありません
 if [ $UID -eq 0 ];then
